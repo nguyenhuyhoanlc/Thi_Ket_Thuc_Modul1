@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let tryRemoveFromArray = function (array,value) {
+        for (let i=0;i<array.length;i++){
+            if (array[i] === value){
+                array.splice(i,1);
+            }
+        }
+        console.log(array);
+    }
+    let array = [10,20,30,45,55,68,70,89,90,101];
+    let array2 = [10,29,59,44,51,89,75,24,93,102];
+    let value = +prompt("Nhập vào 1 số: ")
+    tryRemoveFromArray(array,value);
+    tryRemoveFromArray(array2,value);
+</script>
+</body>
+</html>
